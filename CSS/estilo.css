@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;1,600&family=Yellowtail&display=swap');
+
+*{
+    font-family: "Titillium Web";
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth; /* menos brusco el desplazamiento de la pagina */
+}
+.inicio{
+    background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)),
+    url("../Imagenes/fondodepagina.jpg");/* degradado de colores con una dirección y colores especificados. */
+    background-size: cover;/* La imagen es renderizada, preservando su proporción propia */
+    background-position: center center; /* define la posición inicial de la imagen de fondo especificada */
+   color: white; 
+}
+.inicio .contenido{
+    max-width: 1000px;
+    margin:auto;
+    text-align: center;
+    padding: 0 10px;
+}
+.inicio .contenido header{
+    padding: 30px;
+}
+.inicio .contenido header nav{
+    position: fixed; /* hace que un elemento se coloque respecto al viewport, Le dices dónde posicionarse al elemento, y se queda ahí mientras el usuario hace scroll. */
+    margin-left: 60px;
+    background-color:#DC7633 ;
+    padding: 15px;
+    border-radius: 10px; /*permite redondear los bordes de las cajas */
+    text-align: left;
+    z-index: 99; /* los elementos con mayor valor z-index cubren aquellos con menor valor. */
+    display: none;
+}
+.inicio .contenido header nav a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin-bottom:10px;
+    font-weight: bold; /* se emplea para mostrar un texto en negrita */
+}
+.inicio .contenido header .logo-marca{
+font-weight: bold;
+font-size:4rem; /* REM : el tamaño de letra del elemento raíz */
+font-family: "Yellowtail";
+text-shadow: 0 0 35px white; /* SOMBRA */
+}
+.inicio .contenido header .logo-marca .color{
+    color: #DC7633;
+    font-family: "Yellowtail";
+}
+.inicio .contenido header .barra-navegadora{
+    position: fixed;
+    background-color: #DC7633;
+    font-size: 20px;
+    /* dimension de la letra */
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    line-height: 50px;
+    cursor: pointer;
+    transition: .5s;
+}
+.inicio .contenido header .barra-navegadora:hover{
+    box-shadow: 0 0 50px white;/* sombra difuminada */
+}
+.inicio .contenido .informacion{
+padding-bottom: 130px;/* espacio de relleno requerido en la parte inferior del elemento */
+}
+.inicio .contenido .informacion h1{
+ font-size: 3rem;
+ letter-spacing: 5px;/* espacio entre caracteres */
+}
+.inicio .contenido .informacion h2{
+    font-weight: normal;
+    font-size: 20px;
+    margin-top: -10px;
+    letter-spacing: 2px;
+}
+.inicio .contenido .informacion .redes{
+    margin: 20px 0;
+}
+.inicio .contenido .informacion .redes a{
+    display: inline-block;
+    text-decoration: none;
+    background-color: rgb(0, 0, 0);
+    color: #DC7633;
+    border: 2px solid #DC7633;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 20px;
+    transition: .3s;
+}
+.inicio .contenido .informacion .redes a:hover{
+    color:white;
+    background-color: #DC7633;
+    box-shadow: 0 0 35px white;
+}
+.inicio .contenido .imag{
+    position: relative;
+}
+.inicio .contenido .imag img{
+    max-width: 250px;
+    border-radius: 75%;
+    border: 5px solid #DC7633;
+    position: absolute;
+    left: 50%;
+    top: -120px;
+    transform: translateX(-50%);
+}
+/* -------------------- */
+.titsobremi{
+    font-family: "Yellowtail";
+    font-size: 5rem;
+}
+.sobremi{
+    background-color: white;
+    padding: 140px 0 75px 0;
+    text-align: center;
+}
+.sobremi .contenido{
+ max-width: 1000px;
+ margin: auto;
+ padding: 0 10px;
+} 
+.sobremi .contenido h3{
+    text-transform: uppercase;
+    font-size: 35px;
+}
+.sobremi .contenido .parrafo{
+    color:#DC7633;
+    font-weight: bold;
+    font-size: 19px;
+    margin-top: 0px;
+}
+.sobremi .contenido p{
+    max-width: 700px;
+    margin: auto;
+    color:black;
+}
+.sobremi .contenido .fila{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+.sobremi .contenido .fila .col{
+    width: 30%;
+}
+.sobremi .contenido .fila .col i{
+ color: #DC7633;
+ display: inline-block;
+ width: 40px;
+ height: 40px;
+ border: 2px solid #DC7633;
+ line-height: 40px;
+ border-radius: 50%;
+}
+.sobremi .contenido .fila .col{
+    display: block;
+    font-weight: bold;
+    margin: 15px 0;
+}
+.sobremi .contenido .fila .col span{
+    display: block;
+    font-weight: bold;
+    margin: 8px 0;
+}
+.habilidades .contenido .titulo{
+    font-family: "Yellowtail";
+    font-size: 5rem;
+}
+.habilidades{
+    padding: 50px 0 75px 0;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)),
+    url("../Imagenes/habilidades.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    color:white;
+}
+.habilidades .contenido{
+    max-width: 1000px;
+    margin:auto;
+    padding: 0 10px;
+}
+.habilidades .contenido h3{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.habilidades .contenido .fil{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.habilidades .contenido .fil .col{
+    width: 47%;
+    text-align: left;
+}
+.habilidades .contenido .fil .col .contenido-barra{
+ display: flex;
+ align-items: center;
+}
+.habilidades .contenido .barra{
+    display: flex;
+    padding: 2px;
+    
+}
+.habilidades .contenido .barra .j{
+    background-color: rgb(17, 0, 255);
+    border: 1px solid #DC7633;
+    border-radius: 3px;
+    margin-right: 10px;
+    width: 30px;
+    height: 40px;
+    margin-right: 2px;
+}
+.habilidades .contenido .barra .c{
+    background: linear-gradient(90deg,rgb(17, 0, 255) 50%, rgb(46, 43, 43) 50%);
+    border: 1px solid #DC7633;
+    border-radius: 3px;
+    margin-right: 10px;
+    width: 30px;
+    height: 40px;
+    margin-right: 2px;
+}
+.habilidades .contenido .barra .a{
+    background-color: rgb(46, 43, 43);
+    border: 1px solid #DC7633;
+    border-radius: 3px;
+    margin-right: 10px;
+    width: 30px;
+    height: 40px;
+    margin-right: 2px;
+}
+.habilidades .contenido .contenido-barra span{
+    padding: 10px;
+    font-size: 25px;
+}
+.resumen .contenido .titulo{
+    font-family: "Yellowtail";
+    font-size: 5rem;
+}
+.resumen{
+    background-color: aliceblue;
+    text-align: center;
+    padding: 50px 0 75px 0;
+}
+.resumen .contenido{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+.resumen .contenido h3{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.resumen .contenido .informacion{
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.resumen .contenido .informacion .col{
+    width: 45%;
+}
+.resumen .contenido .informacion .col .titulo2{
+    display: inline-block;
+    color:#DC7633;
+    font-weight: bold;
+    border:2px solid #DC7633;
+    padding: 10px;
+}
+.resumen .contenido .informacion .col table{
+    margin-top: 30px;
+    border-collapse: collapse;
+}
+.resumen .contenido .informacion .col table .datos{
+width: 40%;
+border-bottom: 1px solid rgb(46, 43, 43);
+}
+.resumen .contenido .informacion .col table h4{
+margin-top: 10px;
+}
+.resumen .contenido .informacion .col table h3{
+font-size: 20px;
+margin-bottom: 5px;
+}
+.resumen .contenido .informacion .col table p{
+    font-size: 14px;
+}
+.resumen .contenido .informacion .col table .promedio{
+    display: block;
+    color: #DC7633;
+    font-weight: bold;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.resumen .contenido .informacion .col table .descripcion{
+    border-left: 1px solid rgb(46, 43, 43);
+    padding-left: 20px;
+}
+.contacto .contenido .titulo2{
+    font-family: "Yellowtail";
+    font-size: 5rem;
+}
+.contacto{
+    background-color: rgb(15, 15, 15);
+    padding: 14px 0 10px 0;
+    color: white;
+    text-align: center;
+}
+.contacto .contenido{
+    max-width: 1000px;
+    margin:auto;
+    padding: 10px 100px;
+}
+.contacto .contenido h3{
+    font-size: 45px;
+    padding: 2px;
+}
+.contacto .contenido .fila{
+    display: flex;
+    justify-content: space-around;
+}
+.contacto .contenido .fila .col{
+    margin-top: 20px;
+}
+.contacto .contenido .fila .col h2{
+    color: #DC7633;
+    font-size: 2rem;
+}
+.contacto .contenido .fila .col span{
+    font-size: 20px;
+}
+
+.contenido-volver{
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    width: 4rem;
+    height: 4rem;
+    z-index: -1;
+}
+.contenido-volver .volver{
+    width: 0rem;
+    height: 0rem;
+    background: white;
+    border-radius: 50%;
+    border: 2px solid #DC7633;
+    cursor: pointer;
+    transition: .2s;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%)
+}
+.volver i{
+    position: absolute;
+    font-size: 2rem;
+    top:48%;
+    left:50%;
+    transform:translate(-50%, -50%) scale(0);
+    color:#DC7633;
+    transition: .2s;
+}
+.fun{
+    z-index:10;
+}
+.fun .volver{
+    animation: arriba .3s ease-in-out;
+    width: 4rem;
+    height: 4rem;
+    z-index: 11;
+}
+.fun i{
+    transform: translate(-50% , -50%) scale(1);
+}
+@keyframes arriba{
+0%{
+    width: 0rem;
+    height: 0rem;
+}
+50%{
+    width: 5rem;
+    height: 5rem;
+}
+100%{
+    width: 4rem;
+    height: 4rem;
+}
+}

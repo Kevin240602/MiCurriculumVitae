@@ -174,7 +174,7 @@ padding-bottom: 130px;/* espacio de relleno requerido en la parte inferior del e
     font-size: 5rem;
 }
 .habilidades{
-    padding: 50px 0 75px 0;
+    padding: 30px 0 70px 0;
     text-align: center;
     background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)),
     url("../Imagenes/habilidades.jpg");
@@ -186,61 +186,87 @@ padding-bottom: 130px;/* espacio de relleno requerido en la parte inferior del e
 .habilidades .contenido{
     max-width: 1000px;
     margin:auto;
-    padding: 0 10px;
+    padding: 0 100px;
 }
 .habilidades .contenido h3{
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 40px;
 }
-.habilidades .contenido .fil{
+.habilidades .contenido .skills{
     display: flex;
     justify-content: space-between;
-    margin-top: 30px;
+    margin-top: 10px;
 }
-.habilidades .contenido .fil .col{
+.habilidades .contenido .skills .detalles{
     width: 47%;
     text-align: left;
+    justify-content: space-between;
+    margin-bottom: 10px;
 }
-.habilidades .contenido .fil .col .contenido-barra{
- display: flex;
- align-items: center;
+.habilidades .contenido .skills span{
+    font-size: 32px;
 }
-.habilidades .contenido .barra{
-    display: flex;
-    padding: 2px;
-    
-}
-.habilidades .contenido .barra .j{
-    background-color: rgb(17, 0, 255);
+.menu{
+    position: relative;
     border: 1px solid #DC7633;
-    border-radius: 3px;
-    margin-right: 10px;
-    width: 30px;
-    height: 40px;
-    margin-right: 2px;
+    border-radius: 20px;
 }
-.habilidades .contenido .barra .c{
-    background: linear-gradient(90deg,rgb(17, 0, 255) 50%, rgb(46, 43, 43) 50%);
-    border: 1px solid #DC7633;
-    border-radius: 3px;
-    margin-right: 10px;
-    width: 30px;
-    height: 40px;
-    margin-right: 2px;
+.menu div{
+    position: relative;
+    width: 0;
+    height: 20px;
+    border-radius: 20px;
+    background-color: #DC7633;
 }
-.habilidades .contenido .barra .a{
-    background-color: rgb(46, 43, 43);
-    border: 1px solid #DC7633;
-    border-radius: 3px;
-    margin-right: 10px;
-    width: 30px;
-    height: 40px;
-    margin-right: 2px;
+#html-menu{
+    animation: html-barra 2s forwards;
 }
-.habilidades .contenido .contenido-barra span{
-    padding: 10px;
-    font-size: 25px;
+@keyframes html-barra{
+    100%{
+        width: 90%;
+    }
 }
+#js-menu{
+    animation: js-barra 2s forwards;
+}
+@keyframes js-barra{
+    100%{
+        width: 70%;
+    }
+}
+#php-menu{
+    animation: php-barra 2s forwards;
+}
+@keyframes php-barra{
+    100%{
+        width: 80%;
+    }
+}
+#boot-menu{
+    animation: boot-barra 2s forwards;
+}
+@keyframes boot-barra{
+    100%{
+        width: 75%;
+    }
+}
+#pho-menu{
+    animation: pho-barra 2s forwards;
+}
+@keyframes pho-barra{
+    100%{
+        width: 95%;
+    }
+}
+#ilu-menu{
+    animation: ilu-barra 2s forwards;
+}
+@keyframes ilu-barra{
+    100%{
+        width: 75%;
+    }
+}
+
 .resumen .contenido .titulo{
     font-family: "Yellowtail";
     font-size: 5rem;
